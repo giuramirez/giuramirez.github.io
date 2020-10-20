@@ -12,17 +12,16 @@
 <body>
     <header>
         <section>
-            <button class="">
-                <nav>
-                    <ul>
-                        <li><a href="#">Herramientas</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Un poco de mí</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contactos</a></li>
-                    </ul>
-                </nav>
-            </button>
+            <input type="checkbox" id="menu-btn"/>
+            <nav class="content-menu">   
+                <ul>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Un poco de mí</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
         </section>
     </header>
     <main>
@@ -48,18 +47,20 @@
                     <label for="choice-1a">Sí</label>
                     <input type="radio" name="choice-a" id="choice-2a">
                     <label for="choice-2a">No</label>
-                    <button>¡Házlo rentable!</button>
+                    <button class="cta-1">¡Házlo rentable!</button>
+                    <a href="#" class="cta-tools">Revisemos ;)</a>
                 </span>
                 <span>¿Tu marca está creciendo con el Marketing que llevas?
                     <input type="radio" name="choice-b" id="choice-1b">
                     <label for="choice-1b">Sí</label>
                     <input type="radio" name="choice-b" id="choice-2b">
                     <label for="choice-2b">No</label>
-                    <button>¡Hagámos crecer TU marca!</button>
+                    <a href="#" class="cta-mkt">¿Seguro/a?, ¡revisemos juntos!</a>
+                    <button class="cta-2">¡Hagámos crecer TU marca!</button>
                 </span>
                 <span>Del listado, ¿cuál te pareció el mejor tipo de website para tu marca?
-                    <input list="website">
-                    <datalist id="website">
+                    <input list="website" id="input-web">
+                    <datalist id="website" required>
                         <option value="E-Commerce"></option>
                         <option value="Portfolio"></option>
                         <option value="Revista o blog"></option>
@@ -68,7 +69,7 @@
                         <option value="Aplicaciones"></option>
                         <option value="Web Corporativo"></option>
                     </datalist>
-                    <button>¡A crear!</button>
+                    <button class="cta-web">¡A crear!</button>
                 </span>
             </div>
         </section>
@@ -158,5 +159,21 @@
             </div>
         </section>
     </main>
+    <footer>
+    <div>
+        <div>
+            <span>Copyright © 2020</span>  
+            <a rel="home" href="https://giuramirez.github.io"> Giuseppe Ramírez</a>
+            <blockquote>"Have the courage to seek the wisdom that will grant you power"</blockquote>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Aviso Legal</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Política de Cookies</a></li>
+            </ul>
+        </nav>
+    </div>
+    </footer>
 </body>
 </html>

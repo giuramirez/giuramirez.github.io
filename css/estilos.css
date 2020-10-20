@@ -11,6 +11,33 @@ html{
 
 /* Mobile */
 
-body{
-        border: 1rem solid black;
+header{
+        border-bottom: 0.1px solid black;
+        height: 4rem;
     }
+
+/* Ocultar los menús y las decisiones de los checks */
+.content-menu,
+.cta-1,
+.cta-tools,
+.cta-mkt,
+.cta-2{
+    visibility: hidden;
+}
+
+#menu-btn:checked ~ .content-menu,
+#choice-1a:checked ~ .cta-1,
+#choice-2a:checked ~ .cta-tools,
+#choice-1b:checked ~ .cta-mkt,
+#choice-2b:checked ~ .cta-2{
+    visibility: visible;
+}
+
+
+
+header, main .content-tools{
+    background-color: rgba(97, 89, 68, 2);
+    color: whitesmoke;
+}
+
+header #menu-btn
