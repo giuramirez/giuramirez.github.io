@@ -3,21 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css" media="screen and (min-width: 320px)">
+    <link rel="stylesheet" href="css/landscape.css" media="screen and (min-width: 480px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
     <title>GiuRamirez</title>
 </head>
 <body>
     <header>
+        <section>
+            <button class="">
+                <nav>
+                    <ul>
+                        <li><a href="#">Herramientas</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Un poco de mí</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+            </button>
+        </section>
     </header>
     <main>
-        <section class="content-cta">
-            <h1>Creando una comunidad de emprendedores responsables con su entorno.
-                Tienes un objetivo?
-            </h1>
-            <button class="btn">
-                Vamos a conseguirlo!
+        <section class="content-tools">
+            <h1>Creo herramientas para emprendedores responsables con su entorno:</h1>
+            <button class="btn-fin">
+                ¿Tu idea o negocio es rentable?
             </button>
+            <button class="btn-mkt">
+                ¿Tu marca está creciendo con el Marketing que llevas?
+            </button>
+            <button class="btn-dev">
+                ¿Qué tipo de website necesita mi marca?
+            </button>
+        </section>
+        <section class="content-servicios">
+            <h2>Crecer tu marca es un proceso, y hay muchos factores involucrados,
+                enlistémoslos y crezcamos juntos.
+            </h2>
+            <div>
+                <span>¿Revisaste si tu idea o negocio es rentable?
+                    <input type="radio" name="choice-a" id="choice-1a">
+                    <label for="choice-1a">Sí</label>
+                    <input type="radio" name="choice-a" id="choice-2a">
+                    <label for="choice-2a">No</label>
+                    <button>¡Házlo rentable!</button>
+                </span>
+                <span>¿Tu marca está creciendo con el Marketing que llevas?
+                    <input type="radio" name="choice-b" id="choice-1b">
+                    <label for="choice-1b">Sí</label>
+                    <input type="radio" name="choice-b" id="choice-2b">
+                    <label for="choice-2b">No</label>
+                    <button>¡Hagámos crecer TU marca!</button>
+                </span>
+                <span>Del listado, ¿cuál te pareció el mejor tipo de website para tu marca?
+                    <input list="website">
+                    <datalist id="website">
+                        <option value="E-Commerce"></option>
+                        <option value="Portfolio"></option>
+                        <option value="Revista o blog"></option>
+                        <option value="Sitio de producto o micrositio"></option>
+                        <option value="Landing Page"></option>
+                        <option value="Aplicaciones"></option>
+                        <option value="Web Corporativo"></option>
+                    </datalist>
+                    <button>¡A crear!</button>
+                </span>
+            </div>
+        </section>
+        <section class="content-bio">
+            <h1>Un poco de mí</h1>
+            <h2>Una pequena biografía profesional.
+            </h2>
+            <p>Hola, si llegaste hasta aquí puede ser por dos razones:
+                1. Te gusta mucho mi contenido, y quieres conocer más de mi.
+                    (Pd: A ti te quiero, y te mando las mejores energías)
+                2. Tienes la intención de adquirir algún servicio mío pero no 
+                confías lo suficiente. Te entiendo, y en breve conocerás a 
+                la persona que hará crecer tu entorno de manera 
+                significativa. 
+            </p>
+            <p>
+                No importa el motivo por el cual estés aquí, te aprecio y
+                valoro tu tiempo, así que rápidamente iré al repaso de mi
+                vida profesional:
+            </p>
+            <p>
+                Nací en Guayaquil-Ecuador en el 94'
+                - Murió Kurt Cobain. 
+                - Nelson Mandela gana las elecciones en Sudáfrica. 
+                - Se lanza la primera PlayStation. 
+                - Se estrena Friends.
+                - Perú representa a latinoamérica con Mario Vargas Llosa ganando el premio Cervantes.
+                - Estados Unidos la sede de la Copa Mundial de Fútbol. 
+                (La gana Brasil)
+                - Iniciaba la guerra del Cenepa en Ecuador. 
+            </p>
+            <p>
+                Sí, me inspiré. 
+                Bien, empecé a trabajar como músico a los 15 anios, en ese entonces 
+                con mi profesor de música de la secundaria.
+                Luego por cosas del destino aterricé como mesero en una pizzería atendida por 
+                italianos, tuve la suerte de tener este nombre. (Risas)
+                Luego pasé por algunas empresas como practicante, por muy corto tiempo, pero 
+                no fue sino hasta el 2013 que encontré mi primer empleo formal, acababa de cumplir 
+                19, cuando un ex-colega de mi papá (+) me ofreció trabajar como su asistente
+                para realizar las visitas de Auditoría anual y obligatoria a su cartera de clientes
+                en mi ciudad, aprendí de contabilidad, finanzas y negocios de manera acelerada 
+                desde entonces. Luego a finales de ese periódo uno de los clientes que visitamos
+                me confió la tarea de ser su Auditor Interno y trabajé con ellos y sus clientes por 6 meses. 
+                Llegados al inicio del 2014 coincidí con el requerimiento de una firma de Auditoría
+                corresponsal de RSM Internacional donde empecé a trabjar como Auditor Junior durante 
+                cinco anios separandome en 2019 como Auditor Senior, había visitado en total 
+                un sinnúmero de companías de distintas características y distintos sectores, aportando y 
+                aprendiendo de la mano de expertos y vivencias propias una vez más de negocios, finanzas,
+                y procesos.
+                A finales del 2019 (pre-pandemia) inicié colaborando con un proyecto llamado Beratec
+                con su CEO Felipe Celleri creamos y redisenamos el MVP descubriendo métodologías 
+                eficientes para cada proceso, desde las Estrategias de Marketing e investigación
+                de mercados con un enfoque de Growth hasta el diseno tecnológico que llevan los productos
+                que la marca ofrece, hoy sigo colaborando como COO con ellos, sin embargo
+                este proyecto personal es con la finalidad de que conozcan al profesional
+                sobre la empresa.
+                Soy de los estudiantes siempre activos, aunque pasé por la Universidad Politécnica Salesiana y por Platzi estudiando lo siguiente:
+                a. Administración de Empresas enfoque en finanzas.
+                b. Desarrollo Web.
+                c. Marketing Digital. 
+            </p>
+        </section>
+        <section class="content-blog">
+            <div class="content-blog-title">
+                <h2>La resolución a tus dudas de emprendimiento
+                    las encontrarás aquí:
+                </h2>
+            </div>
+            <div class="content-blog-btn">
+                <button>Modelos financieros</button>
+                <button>Comunicación de marca</button>
+            </div>
+        </section>
+        <section class="content-contact">
+            <div class="content-contact-meet">
+                <a href="" class="">Correo electrónico</a>
+                <a href="" class="">Contacto</a>
+                <a href="" class="">Whatsapp, telegram</a>
+            </div>
+            <div class="content-contact-sm">
+                <a href="" class="">GitHub</a>
+                <a href="" class="">LinkedIn</a>
+                <a href="" class="">Instagram</a>
+                <a href="" class="">Facebook</a>
+                <a href="" class="">Tiktok</a>
+            </div>
         </section>
     </main>
 </body>
