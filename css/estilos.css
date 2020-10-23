@@ -16,6 +16,10 @@ header{
         height: 4rem;
     }
 
+header .content-section-icon #menu-btn{
+    display: none;
+}
+
 header .content-section-icon .menu-btn{
     display: block;
     width: 3.5rem;
@@ -43,7 +47,7 @@ header .content-section-icon .content-menu{
     visibility: hidden;
 }
 
-.menu-btn:active ~ .content-menu{
+#menu-btn:checked ~ .content-menu{
     visibility: visible;
 }
 
@@ -69,32 +73,7 @@ a {
     color: white;
 }
 
-
-
-/* Ocultar los menús y las decisiones de los checks */
-
-/* .content-menu,
-.cta-1,
-.cta-tools,
-.cta-mkt,
-.cta-2{
-    visibility: hidden;
-}
-
-.menu-btn:active ~ .content-menu,
-#choice-1a:checked ~ .cta-1,
-#choice-2a:checked ~ .cta-tools,
-#choice-1b:checked ~ .cta-mkt,
-#choice-2b:checked ~ .cta-2{
-    visibility: visible;
-} */
-
-
-
-
 header, main .content-tools{
     background-color: rgba(97, 89, 68, 2);
     color: whitesmoke;
 }
-
-header #menu-btn
