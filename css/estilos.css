@@ -185,6 +185,7 @@ main .content-contact .caption-box{
     height: 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: var(--p-size);
     color: var(--otherletters-color);
@@ -192,3 +193,123 @@ main .content-contact .caption-box{
 
 /* Botones */
 
+main .content-contact-meet, .content-contact-sm{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content-contact-meet label{
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--action-color);
+    color: var(--h-color);
+    font-size: var(--sub-size);
+}
+
+main .content-contact-sm label{
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--otherletters-color);
+    color: var(--h-color);
+    font-size: var(--sub-size);
+}
+
+main .content-nav-contact ul{
+    width: 20rem;
+    height: 7rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .content-nav-contact a{  
+    text-decoration: none;
+    font-size: var(--header-size);
+    color: var(--otherletters-color);
+}
+
+main .content-nav-contact a:hover{
+    color: var(--primary-color);
+}
+
+
+main .content-nav-follow ul{
+    width: 30rem;
+    height: 7rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .content-nav-follow a{  
+    text-decoration: none;
+    font-size: var(--header-size);
+    color: var(--primary-color);
+}
+
+main .content-nav-follow a:hover{
+    color: var(--action-color);
+}
+
+
+/* Ocultar botones */
+
+#conectemos-btn, #follow-btn{
+    display: none;
+}
+
+main .content-contact-meet .content-nav-contact{
+    visibility: hidden;
+}
+
+#conectemos-btn:checked ~ .content-nav-contact
+{
+    visibility: visible;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+main .content-contact-sm .content-nav-follow{
+    visibility: hidden;
+}
+
+#follow-btn:checked ~ .content-nav-follow
+{
+    visibility: visible;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
