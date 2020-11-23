@@ -219,7 +219,7 @@ main .content-contact-sm label{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--otherletters-color);
+    background-color: var(--primary-bcolor);
     color: var(--h-color);
     font-size: var(--sub-size);
 }
@@ -240,7 +240,7 @@ main .content-nav-contact a{
 }
 
 main .content-nav-contact a:hover{
-    color: var(--primary-color);
+    color: var(--primary-bcolor);
 }
 
 
@@ -256,11 +256,11 @@ main .content-nav-follow ul{
 main .content-nav-follow a{  
     text-decoration: none;
     font-size: var(--header-size);
-    color: var(--primary-color);
+    color: var(--otherletters-color);
 }
 
 main .content-nav-follow a:hover{
-    color: var(--action-color);
+    color: var(--primary-bcolor);
 }
 
 
@@ -313,3 +313,64 @@ main .content-contact-sm .content-nav-follow{
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+
+/* footer */
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--primary-bcolor);
+}
+
+footer .content-copyright{
+    width: 100%;
+    height: 30%;
+    font-size: var(--p-size);
+    color: var(--h-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-copyright a{
+    text-decoration: none;
+    font-style: none;
+    color: var(--h-color);    
+}
+
+footer .content-politicas{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+footer .content-politicas ul{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .content-politicas li{
+    list-style: none;
+    background-color: var(--otherletters-color);
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--h-color);
+}
+
+
+footer .content-politicas a{
+    text-decoration: none;
+    font-size: var(--p-size);
+    color: var(--h-color);
+}
+
