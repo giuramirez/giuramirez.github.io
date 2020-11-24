@@ -1,4 +1,98 @@
 /* landscape */
-body{
-    border: 1rem solid green;
+
+header{
+    height: 10vh;
+    width: 100vw;
+}
+
+/* pagina 1 */
+
+main .content-tools .content-btn{
+    height: 50%;
+    width: 100%;
+    flex-direction: inherit;
+}
+
+main .content-tools a{
+    width: 15rem;
+    height: 50%;
+}
+
+/* pagina 2 */
+
+main .content-contact .content-cap-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+main .content-contact .content-cap-pic .content-pic{
+    width: 30%;
+    height: 100%;
+}
+
+main .content-contact .greetings-box{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content-contact .caption-box{
+    width: 50%;
+    height: 100%;
+}
+
+
+main .content-contact .content-contact-meet{
+    height: 20%;
+    width: 40%;
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+main .content-contact .content-contact-sm{
+    height: 20%;
+    width: 40%;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 25px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,-150%,0);
+        transform: translate3d(0,-150%,0);
+    }
+}
+
+/* footer */
+
+footer{
+    display: flex;
+}
+
+footer .content-copyright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content-politicas{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
